@@ -1,0 +1,65 @@
+/*****************
+ ALEX RODRIGUEZ VALDES - UO282936
+ Estilos de los documentos html
+*****************/
+
+body {
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+header picture {
+    padding: 2em 1em 2em 2em;
+}
+
+header h1 {
+    padding: 0.75em 0em 0em;
+}
+
+nav {
+    padding-bottom: 1.2em;
+    align-self: center;
+    background-color: rgb(205, 214, 222);
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+}
+
+nav a {
+    color: black;
+    text-align: center;
+    padding-top: 1em;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+}
+
+table {
+    border-spacing: 0.5em;
+    border-style: double;
+}
+
+ul {
+    padding-left: 15%;
+}
+
+li ul {
+    padding-left: 10%;
+}
+
+fieldset p {
+    padding-left: 3%;
+}
+
+fieldset label {
+    padding-right: 3%;
+}
+
+textarea {
+    resize: none;
+    padding-left: 3%;
+}
