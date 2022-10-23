@@ -53,6 +53,7 @@ li ul {
 
 fieldset p {
     padding-left: 3%;
+    padding-bottom: 1.5em;
 }
 
 fieldset label {
@@ -60,5 +61,6 @@ fieldset label {
 }
 
 textarea {
+    resize: none;
     padding-left: 3%;
 }
