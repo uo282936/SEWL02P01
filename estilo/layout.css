@@ -1,0 +1,64 @@
+/*****************
+ ALEX RODRIGUEZ VALDES - UO282936
+ Distribución de secciones
+*****************/
+
+body {
+    display: grid;
+    grid-template-areas: "h h h h h h h h"
+                         "n n n n n n n n"
+                         "a a a a a a a a"
+                         "a a a a a a a a"
+                         "f f f f f f f f";
+}
+
+header {
+    grid-area: h;
+    display: grid;
+    grid-template-areas: "l t"
+                         "l t";
+    grid-template-columns: 0.2fr 2fr;
+}
+
+header picture {
+    grid-area: l;
+}
+
+header h1 {
+    grid-area: t;
+}
+
+nav {
+    grid-area: n;
+}
+
+article {
+    grid-area: a;
+    display: grid;
+    grid-template-areas: "h2 h2 h2 h2"
+                         "s1 s1 s1 s2"
+                         "s1 s1 s1 as"
+                         "s1 s1 s1 as";
+    column-gap: 3em;
+}
+
+article h2 {
+    grid-area: h2;
+}
+
+article section {
+    grid-area: s1;
+}
+
+article section:last-of-type {
+    grid-area: s2;
+}
+
+article aside {
+    grid-area: as;
+}
+
+footer {
+    padding-top: 0.75em;
+    grid-area: f;
+}
