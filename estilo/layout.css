@@ -14,6 +14,7 @@ body {
 
 header {
     grid-area: h;
+
     display: grid;
     grid-template-areas: "l t";
     grid-template-columns: 0.2fr 2fr;
@@ -29,20 +30,29 @@ header h1 {
 
 nav {
     grid-area: n;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
 }
 
 main {
     grid-area: m;
+
     display: grid;
     grid-template-areas: "h2 h2 h2 h2"
-                         "s1 s1 s1 s2"
-                         "s1 s1 s1 ar"
-                         "s1 s1 s1 ar";
+                         "ar ar ar s1"
+                         "ar ar ar s2"
+                         "ar ar ar s2";
+
     column-gap: 3em;
 }
 
 main h2 {
     grid-area: h2;
+}
+
+main article {
+    grid-area: ar;
 }
 
 main section {
@@ -53,11 +63,6 @@ main section:last-of-type {
     grid-area: s2;
 }
 
-main article {
-    grid-area: ar;
-}
-
 footer {
-    padding-top: 0.75em;
     grid-area: f;
 }

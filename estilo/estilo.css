@@ -18,16 +18,16 @@ header h1 {
 
 nav {
     padding-bottom: 1.2em;
+
     align-self: center;
     background-color: rgb(205, 214, 222);
-    display: grid;
-    grid-template-columns: repeat(4,1fr) ;
 }
 
 nav a {
-    color: black;
-    text-align: center;
     padding-top: 1em;
+
+    text-align: center;
+    color: black;
 }
 
 nav a:link {
@@ -38,45 +38,50 @@ nav a:hover {
     color: red;
 }
 
-table {
-    border-spacing: 0.5em;
-    border-style: double;
-}
+article img {
+    padding-bottom: 2em;
+    margin-left: 25%;
 
-ul {
-    padding-left: 15%;
-}
-
-li ul {
-    padding-left: 10%;
-}
-
-section img {
     width: 50%;
     height: auto;
-    margin-left: 25%;
-    padding-bottom: 2em;
 }
 
-video {
+article video {
     width: 100%;
     height: auto;
 }
 
-form p {
+article table {
+    border-spacing: 0.5em;
+    border-style: double;
+}
+
+article ul {
+    padding-left: 15%;
+}
+
+article li ul {
+    padding-left: 10%;
+}
+
+article form p {
     padding-top: 0.4em;
     padding-bottom: 0.6em;
 }
 
-fieldset p {
-    padding-left: 3%;
+article form fieldset p {
     padding-top: 0.5em;
+    padding-left: 3%;
 }
 
-fieldset label {
+article form fieldset p label {
     padding-right: 3%;
 }
 
-textarea {
+article form textarea {
     padding-left: 3%;
+}
+
+footer {
+    padding-top: 0.75em;
 }
