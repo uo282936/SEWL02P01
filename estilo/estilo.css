@@ -3,41 +3,89 @@
  Estilos de los documentos html
 *****************/
 
+/* Especificidad (0,0,1) */
 body {
-    padding-left: 13%;
-    padding-right: 13%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    /*padding-left: 13%;
+    padding-right: 13%;*/
 }
 
+/* Especificidad (0,0,2) */
 header img {
-    padding: 2em 1em 2em 2em;
+    padding: 2.2em 1em 2em 2em;
 }
 
+/* Especificidad (0,0,2) */
 header h1 {
-    padding: 0.75em 0em 0em;
+    padding: 0.75em 0em 0em 0.3em;
 }
 
+/* Especificidad (0,0,1) */
 nav {
     padding-bottom: 1.2em;
 
     align-self: center;
-    background-color: rgb(205, 214, 222);
+    background-color: rgba(240, 243, 245, 0.997);
+    border-top: 0.3em solid rgb(186, 14, 14);
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* Especificidad (0,0,2) */
 nav a {
     padding-top: 1em;
+    padding-right: 5%;
+    padding-left: 5%;
 
     text-align: center;
     color: black;
 }
 
+/* Especificidad (0,1,2) */
 nav a:link {
     text-decoration: none;
 }
 
+/* Especificidad (0,1,2) */
 nav a:hover {
-    color: red;
+    color: rgb(186, 14, 14);
 }
 
+main a:link {
+    color: rgb(170, 8, 8);
+}
+
+main a:visited {
+    color: rgb(170, 8, 8);
+}
+
+main a:active {
+    color: black;
+}
+
+main a:hover {
+    background-color: rgb(250, 246, 246);
+}
+
+h2 {
+    color: rgb(170, 8, 8);
+}
+
+section {
+    border-left: 0.2em solid rgb(170, 8, 8);
+    border-top: 0.2em solid rgb(170, 8, 8);
+    border-bottom: 0.2em solid rgb(170, 8, 8);
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
+    padding-left: 1.2em;
+    margin-bottom: 0.2em;
+}
+
+/* Especificidad (0,0,2) */
 article img {
     padding-bottom: 2em;
     margin-left: 25%;
@@ -46,42 +94,57 @@ article img {
     height: auto;
 }
 
+/* Especificidad (0,0,2) */
 article video {
-    width: 100%;
-    height: auto;
+    padding-left: 2.5em;
+    /*width: 100%;
+    height: auto;*/
 }
 
+/* Especificidad (0,0,2) */
 article table {
     border-spacing: 0.5em;
     border-style: double;
 }
 
+/* Especificidad (0,0,2) */
 article ul {
-    padding-left: 15%;
+    padding-left: 5%;
 }
 
+/* Especificidad (0,0,3) */
 article li ul {
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
+/* Especificidad (0,0,3) */
 article form p {
     padding-top: 0.4em;
     padding-bottom: 0.6em;
 }
 
+article form fieldset {
+    padding-right: 10%;
+}
+
+/* Especificidad (0,0,4) */
 article form fieldset p {
     padding-top: 0.5em;
     padding-left: 3%;
 }
 
+/* Especificidad (0,0,5) */
 article form fieldset p label {
     padding-right: 3%;
 }
 
+/* Especificidad (0,0,3) */
 article form textarea {
     padding-left: 3%;
 }
 
+/* Especificidad (0,0,1) */
 footer {
-    padding-top: 0.75em;
+    margin-top: 3em;
+    border-top: 0.1em solid black;
 }
